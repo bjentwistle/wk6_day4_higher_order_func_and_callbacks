@@ -87,8 +87,8 @@ console.log(getEvens(moreNumbers))
 //sumElements can be refactored using array.reduce() 
 
 const sumElements = (numbers) => {
-    const initialValue = 0;
+    const initialValue = 0;  //not essential - if omitted the currentValue will be array[1]
     const sumWithInitial = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue)
     return sumWithInitial
 }
-console.log(sumElements(moreNumbers))
+console.log(sumElements(myNumbers))
